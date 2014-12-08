@@ -1,11 +1,9 @@
 # FaviconRotate.js
-## Example
+## Usage
 ```javascript
 new FaviconRotate([
-    '/favicon.ico',
-    '/images/favicons/01.ico',
-    '/images/favicons/02.ico',
-    '/images/favicons/03.ico',
-    '/images/favicons/04.ico',
-  ]);
+      'favicons/html5.ico',
+      'favicons/js.ico',
+      'favicons/rails.ico'
+    ]);
 ```
