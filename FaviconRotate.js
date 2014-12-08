@@ -12,7 +12,7 @@
         }
         var new_el = document.createElement('link');
         new_el.setAttribute('rel', 'shortcut icon');
-        new_el.setAttribute('href', arr[i % 5]);
+        new_el.setAttribute('href', arr[i % arr.length]);
         document.getElementsByTagName('head')[0].appendChild(new_el);
         setTimeout(function() {
           favicon(i + 1);
