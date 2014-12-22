@@ -4,7 +4,8 @@
 
   global.FaviconRotate = (function() {
 
-    return function(arr) {
+    return function(arr, timeout) {
+      timeout = typeof timeout !== 'undefined' ? timeout : 1500;
       (function favicon(i) {
         var old_el = document.querySelector('link[rel="shortcut icon"]');
         if (old_el) {
@@ -16,7 +17,7 @@
         document.getElementsByTagName('head')[0].appendChild(new_el);
         setTimeout(function() {
           favicon(i + 1);
-        }, 1500);
+        }, timeout);
       })(0);
     }
 
